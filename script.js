@@ -152,3 +152,21 @@ if (res.ok) {
 }
     });
 }
+
+// Mostrar modal de éxito al enviar formularios
+document.querySelectorAll('form').forEach(form => {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('modal-exito').classList.remove('oculto');
+    // Opcional: resetear el formulario
+    form.reset();
+  });
+});
+
+// Cerrar modal con la cruz o el botón continuar
+document.getElementById('cerrarModalExito').onclick = cerrarModal;
+document.getElementById('continuarModalExito').onclick = cerrarModal;
+
+function cerrarModal() {
+  document.getElementById('modal-exito').classList.add('oculto');
+}
