@@ -143,16 +143,6 @@ if (contactoForm) {
     body: JSON.stringify({ nombre, email, mensaje })
 });
 
-if (res.ok) {
-    alert('¡Mensaje enviado correctamente!');
-    this.reset();
-} else {
-    const data = await res.json();
-    alert('Error: ' + (data.error || data.msg || 'No se pudo enviar el mensaje.'));
-}
-    });
-}
-
 // Mostrar modal de éxito al enviar formularios
 document.querySelectorAll('form').forEach(form => {
   form.addEventListener('submit', function(e) {
