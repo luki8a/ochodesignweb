@@ -41,7 +41,7 @@ app.post('/api/contacto', async (req, res) => {
 });
 
 // Inicia el servidor
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4084;
 app.listen(PORT, () => {
-  console.log(`Servidor backend escuchando en puerto ${PORT}`);
+  console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
