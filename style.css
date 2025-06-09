@@ -1154,3 +1154,71 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--fondo); col
         z-index: 1001;
     }
 }
+
+/* ...existing code... */
+
+/* Modal de éxito para formularios - estilo personalizado */
+.modal-exito {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(40, 0, 60, 0.85); /* fondo violeta oscuro translúcido */
+  display: flex; align-items: center; justify-content: center;
+  z-index: 9999;
+}
+.modal-exito.oculto {
+  display: none;
+}
+.modal-exito-contenido {
+  background: #2d0146; /* violeta profundo */
+  padding: 2.2rem 1.7rem 2rem 1.7rem;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.22);
+  text-align: center;
+  position: relative;
+  min-width: 320px;
+  border: 3px solid #00eaff; /* celeste */
+  color: #fff;
+}
+.modal-exito-cerrar {
+  position: absolute;
+  top: 12px; right: 18px;
+  background: none;
+  border: none;
+  font-size: 2.1rem;
+  color: #00eaff;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.modal-exito-cerrar:hover {
+  color: #00e887;
+}
+.modal-exito-contenido h3 {
+  margin-top: 0.5rem;
+  color: #00eaff;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+.modal-exito-contenido p {
+  margin: 1.1rem 0 1.5rem 0;
+  color: #fff;
+  font-size: 1.08rem;
+}
+.modal-exito-continuar {
+  margin-top: 0.5rem;
+  padding: 0.6rem 2.2rem;
+  background: linear-gradient(90deg, #00eaff 0%, #00e887 100%);
+  color: #2d0146;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0,234,255,0.10);
+  transition: background 0.2s, color 0.2s;
+}
+.modal-exito-continuar:hover {
+  background: linear-gradient(90deg, #00e887 0%, #00eaff 100%);
+  color: #1a0030;
+}
+
+/* ...existing code... */
