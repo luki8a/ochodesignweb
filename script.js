@@ -136,12 +136,21 @@ if (contactoForm) {
         const email = this.querySelector('input[name="email"]').value;
         const mensaje = this.querySelector('textarea[name="mensaje"]').value;
 
-       const res = await fetch("https://ochodesignweb.onrender.com/api/contacto", {
-
+       const res = await fetch('http://localhost:4000/api/contacto', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ nombre, email, mensaje })
 });
+
+if (res.ok) {
+    alert('¡Mensaje enviado correctamente!');
+    this.reset();
+} else {
+    const data = await res.json();
+    alert('Error: ' + (data.error || data.msg || 'No se pudo enviar el mensaje.'));
+}
+    });
+}
 
 // Mostrar modal de éxito al enviar formularios
 document.querySelectorAll('form').forEach(form => {
