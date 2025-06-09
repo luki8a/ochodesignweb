@@ -136,7 +136,8 @@ if (contactoForm) {
         const email = this.querySelector('input[name="email"]').value;
         const mensaje = this.querySelector('textarea[name="mensaje"]').value;
 
-       const res = await fetch('http://localhost:4000/api/contacto', {
+       const res = await fetch("https://ochodesignweb.onrender.com/api/contacto", {
+
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ nombre, email, mensaje })
