@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- ...existing code... -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocho Design Web</title>
+    <meta name="description" content="Creamos sitios web modernos y efectivos.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./imagenes/logo-web.png">
+    <!-- Sugerencia: Usa Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- ...existing code... -->
+<body>
+    <!-- HEADER & NAV -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="logo">Ocho Design<span>Web</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+  <span class="hamburger"></span>
+  <span class="close-icon">
+    <!-- SVG de cerrar (X) -->
+    <svg width="28" height="28" viewBox="0 0 28 28">
+      <line x1="6" y1="6" x2="22" y2="22" stroke="#00E887" stroke-width="3" stroke-linecap="round"/>
+      <line x1="22" y1="6" x2="6" y2="22" stroke="#00E887" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+  </span>
+</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <div class="hero-bg"></div>
+            <div class="hero-content fade-in">
+                <h1>Creamos Tu Sitio Web Ideal</h1>
+                <p>Creamos tu sitio web ideal en Argentina. Diseño web profesional y desarrollo a medida optimizado para SEO. Lográ una presencia online efectiva con sitios web modernos y responsivos que impulsan tu negocio.</p>
+                <a href="#contacto" class="cta-btn">¡Pide Tu Cotización Ahora!</a>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section class="servicios" id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios-list">
+                <article class="servicio anim-on-scroll">
+                    <i class="fas fa-file-code"></i>
+                    <h3>One-Page</h3>
+                    <p>Landing pages modernas, rápidas y optimizadas para captar clientes.</p>
+                </article>
+                <article class="servicio anim-on-scroll">
+                    <i class="fas fa-globe"></i>
+                    <h3>Diseño Web Profesional</h3>
+                    <p>Creamos sitios web multi-página autoadministrables y escalables, impulsando el crecimiento de tu negocio.</p>
+                </article>
+                <article class="servicio anim-on-scroll">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Diseño Responsive</h3>
+                    <p>Tu web se verá perfecta en cualquier dispositivo.</p>
+                </article>
+                <article class="servicio anim-on-scroll">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Optimización SEO</h3>
+                    <p>Mejoramos tu posicionamiento en buscadores.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- PLANES -->
+       <section class="planes" id="planes">
+  <h2 class="planes-title">¡Elegí el Plan Perfecto para Impulsar tu Negocio!</h2>
+  <div class="planes-list">
+    <!-- Plan Básico -->
+    <div class="plan-info">
+      <h2>Plan Básico</h2>
+      <p class="plan-sub"><span class="plan-icon">⚡</span> Página One Page moderna y efectiva.</p>
+      <div class="plan-precio-grande">
+        <span>desde</span>
+        <strong>$70.000</strong>
+        <span style="font-size:0.95rem;color:#bbb;">(ARS)</span>
+      </div>
+      <button class="btn-primary">Contratar Plan</button>
+      <button class="btn-secondary">Consultar</button>
+      <div class="plan-rating">
+        
+      </div>
+      <ul class="plan-lista">
+        <li>
+          <svg width="18" height="18" viewBox="0 0 1200 1200"><path d="M1004.237,99.152l-611.44,611.441L194.492,512.288L0,706.779
+          l198.305,198.306l195.762,195.763L588.56,906.355L1200,294.916L1004.237,99.152z" style="fill:var(--verde)"/></svg>
+          Responsive y diseño atractivo
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 1200 1200"><path d="M1004.237,99.152l-611.44,611.441L194.492,512.288L0,706.779
+          l198.305,198.306l195.762,195.763L588.56,906.355L1200,294.916L1004.237,99.152z" style="fill:var(--verde)"/></svg>
+          Hasta 5 secciones de contenido
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 1200 1200"><path d="M1004.237,99.152l-611.44,611.441L194.492,512.288L0,706.779
+          l198.305,198.306l195.762,195.763L588.56,906.355L1200,294.916L1004.237,99.152z" style="fill:var(--verde)"/></svg>
+          Optimización de hasta 10 imágenes
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 1200 1200"><path d="M1004.237,99.152l-611.44,611.441L194.492,512.288L0,706.779
+          l198.305,198.306l195.762,195.763L588.56,906.355L1200,294.916L1004.237,99.152z" style="fill:var(--verde)"/></svg>
+          Formulario de contacto básico
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 1200 1200"><path d="M1004.237,99.152l-611.44,611.441L194.492,512.288L0,706.779
+          l198.305,198.306l195.762,195.763L588.56,906.355L1200,294.916L1004.237,99.152z" style="fill:var(--verde)"/></svg>
+          Google Maps integrado
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 1200 1200"><path d="M1004.237,99.152l-611.44,611.441L194.492,512.288L0,706.779
+          l198.305,198.306l195.762,195.763L588.56,906.355L1200,294.916L1004.237,99.152z" style="fill:var(--verde)"/></svg>
+          Enlaces a 3 redes sociales
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 1200 1200"><path d="M1004.237,99.152l-611.44,611.441L194.492,512.288L0,706.779
+          l198.305,198.306l195.762,195.763L588.56,906.355L1200,294.916L1004.237,99.152z" style="fill:var(--verde)"/></svg>
+          SEO básico (meta-tags)
+        </li>
+      </ul>
+
+    </div>
+    <!-- Plan Premium -->
+    <div class="plan-info">
+      <h2>Presencia Profesional</h2>
+      <p class="plan-sub"><span class="plan-icon">🌟</span> Sitio web de hasta 3 páginas, ideal para empresas.</p>
+      <div class="plan-precio-grande">
+        <span>desde</span>
+        <strong>$110.000</strong>
+        <span style="font-size:0.95rem;color:#bbb;">(ARS)</span>
+      </div>
+      <button class="btn-primary">Contratar Plan</button>
+      <button class="btn-secondary">Consultar</button>
+      <div class="plan-rating">
+        
+      </div>
+      <ul class="plan-lista">
+        <li>
+          <svg width="18" height="18" viewBox="0 0 1200 1200"><path d="M1004.237,99.152l-611.44,611.441L194.492,512.288L0,706.779
+          l198.305,198.306l195.762,195.763L588.56,906.355L1200,294.916L1004.237,99.152z" style="fill:var(--verde)"/></svg>
+          Responsive y diseño personalizado
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 1200 1200"><path d="M1004.237,99.152l-611.44,611.441L194.492,512.288L0,706.779
+          l198.305,198.306l195.762,195.763L588.56,906.355L1200,294.916L1004.237,99.152z" style="fill:var(--verde)"/></svg>
+          Hasta 3 páginas internas
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 1200 1200"><path d="M1004.237,99.152l-611.44,611.441L194.492,512.288L0,706.779
+          l198.305,198.306l195.762,195.763L588.56,906.355L1200,294.916L1004.237,99.152z" style="fill:var(--verde)"/></svg>
+          Optimización de hasta 20 imágenes
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 1200 1200"><path d="M1004.237,99.152l-611.44,611.441L194.492,512.288L0,706.779
+          l198.305,198.306l195.762,195.763L588.56,906.355L1200,294.916L1004.237,99.152z" style="fill:var(--verde)"/></svg>
+          Galería o portafolio de proyectos
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 1200 1200"><path d="M1004.237,99.152l-611.44,611.441L194.492,512.288L0,706.779
+          l198.305,198.306l195.762,195.763L588.56,906.355L1200,294.916L1004.237,99.152z" style="fill:var(--verde)"/></svg>
+          Formulario de contacto avanzado
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 1200 1200"><path d="M1004.237,99.152l-611.44,611.441L194.492,512.288L0,706.779
+          l198.305,198.306l195.762,195.763L588.56,906.355L1200,294.916L1004.237,99.152z" style="fill:var(--verde)"/></svg>
+          Integraciones: WhatsApp, newsletter, Google Maps
+        </li>
+
+        
+    </main>
+    
+    <!-- PROYECTOS -->
+        <section class="proyectos" id="proyectos">
+  <h2>Proyectos Recientes</h2>
+  <div class="proyectos-grid">
+    <div class="proyecto-card anim-on-scroll">
+      <div class="proyecto-img">
+        <img src="./imagenes/web-futsorteo.png" alt="Portfolio Personal">
+      </div>
+      <h4>Futsorteo</h4>
+      <p>Plataforma de sorteos deportivos automatizados y gestión de participantes.</p>
+      <a href="https://luki8a.github.io/Futsorteo/" class="proyecto-detalles">Visitar Sitio</a>
+    </div>
+    <div class="proyecto-card anim-on-scroll">
+      <div class="proyecto-img">
+        <img src="./imagenes/web-porfolio.png" alt="Portfolio Personal">
+      </div>
+      <h4>Portfolio Personal</h4>
+      <p>Portfolio interactivo para mostrar proyectos y habilidades profesionales.</p>
+      <a href="http://127.0.0.1:5500/index.html" class="proyecto-detalles">Visitar Sitio</a>
+    </div>
+    <div class="proyecto-card anim-on-scroll">
+      <div class="proyecto-img">
+        <img src="./imagenes/web-equipo-santillan.png" alt="Equipo Santillán">
+      </div>
+      <h4>Equipo Santillán</h4>
+      <p>One page profesional diseñada para convertir el tráfico en alumnos que entrenen boxeo profesional. </p>
+      <a href="http://localhost/Santillan/" class="proyecto-detalles">Visitar Sitio</a>
+    </div>
+  </div>
+</section>
+        <!-- TESTIMONIOS -->
+                <section id="testimonios" class="testimonios-carrusel-section">
+          <h2 class="testimonios-title">Lo que dicen nuestros clientes</h2>
+          
+          <!-- Versión desktop (cards lado a lado) -->          <div class="testimonios-container-desktop">
+            <div class="testimonio-desktop-card">
+              <div class="testimonio-avatar">
+                <img src="https://via.placeholder.com/150/240046/ffffff?text=Cliente+1" alt="Cliente 1">
+              </div>
+              <div class="testimonio-estrellas">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+              <p class="testimonio-text">"Increíble servicio. Transformaron completamente nuestra presencia online y las ventas han aumentado significativamente."</p>
+              <p class="testimonio-nombre">Juan Pérez</p>
+              <p class="testimonio-cargo">CEO de Marketing Digital</p>
+            </div>
+              <div class="testimonio-desktop-card">
+              <div class="testimonio-avatar">
+                <img src="https://via.placeholder.com/150/240046/ffffff?text=Cliente+2" alt="Cliente 2">
+              </div>
+              <div class="testimonio-estrellas">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+              <p class="testimonio-text">"El diseño web superó todas mis expectativas. Profesionales y muy atentos a cada detalle."</p>
+              <p class="testimonio-nombre">María González</p>
+              <p class="testimonio-cargo">Dueña de Boutique Elegance</p>
+            </div>
+              <div class="testimonio-desktop-card">
+              <div class="testimonio-avatar">
+                <img src="https://via.placeholder.com/150/240046/ffffff?text=Cliente+3" alt="Cliente 3">
+              </div>
+              <div class="testimonio-estrellas">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+              <p class="testimonio-text">"Trabajar con ellos fue la mejor decisión para mi negocio. Ahora tenemos una web que realmente convierte."</p>
+              <p class="testimonio-nombre">Carlos Rodríguez</p>
+              <p class="testimonio-cargo">Fundador de TechSolutions</p>
+            </div>
+          </div>
+          
+          <!-- Versión mobile (swipe horizontal) -->
+          <div class="testimonios-carrusel">            <div class="testimonio-card">
+              <div class="testimonio-avatar">
+                <img src="https://via.placeholder.com/150/240046/ffffff?text=Cliente+1" alt="Cliente 1">
+              </div>
+              <div class="testimonio-estrellas">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+              <p class="testimonio-text">"Increíble servicio. Transformaron completamente nuestra presencia online y las ventas han aumentado significativamente."</p>
+              <p class="testimonio-nombre">Juan Pérez</p>
+              <p class="testimonio-cargo">CEO de Marketing Digital</p>
+            </div>
+              <div class="testimonio-card">
+              <div class="testimonio-avatar">
+                <img src="https://via.placeholder.com/150/240046/ffffff?text=Cliente+2" alt="Cliente 2">
+              </div>
+              <div class="testimonio-estrellas">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+              <p class="testimonio-text">"El diseño web superó todas mis expectativas. Profesionales y muy atentos a cada detalle."</p>
+              <p class="testimonio-nombre">María González</p>
+              <p class="testimonio-cargo">Dueña de Boutique Elegance</p>
+            </div>
+              <div class="testimonio-card">
+              <div class="testimonio-avatar">
+                <img src="https://via.placeholder.com/150/240046/ffffff?text=Cliente+3" alt="Cliente 3">
+              </div>
+              <div class="testimonio-estrellas">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+              <p class="testimonio-text">"Trabajar con ellos fue la mejor decisión para mi negocio. Ahora tenemos una web que realmente convierte."</p>
+              <p class="testimonio-nombre">Carlos Rodríguez</p>
+              <p class="testimonio-cargo">Fundador de TechSolutions</p>
+            </div>
+          </div>
+          
+                  <!-- Puntos de navegación para mobile -->
+        <div class="testimonios-paginacion-mobile" id="testimoniosPaginacionMobile">
+          <!-- Los puntos se generarán dinámicamente con JavaScript -->
+        </div>
+
+        <!-- Indicador de swipe para mobile -->
+        <div class="swipe-indicator">
+          Desliza <i class="fas fa-arrow-right"></i> para ver más
+        </div>
+
+</section>
+
+        <!-- CONTACTO -->
+        <section class="contacto" id="contacto">
+          <h2>Contacto</h2>
+          <div class="contacto-flex">
+        <form class="contacto-form anim-on-scroll">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+                <div class="contacto-info anim-on-scroll">
+            <h3 class="contacto-titulo">¿Listo para potenciar tu presencia online?</h3>
+            <p class="contacto-seo">
+                Escríbenos o contáctanos por redes sociales. <br>
+                Respondemos rápido y te ayudamos a llevar tu negocio al siguiente nivel con un sitio web profesional y optimizado para buscadores (SEO).
+            </p>
+            <div class="contacto-datos">
+                <div class="dato-contacto">
+                    <i class="fas fa-envelope"></i>
+                    <span>contacto@ochodesign.com</span>
+                </div>
+                <div class="dato-contacto">
+                    <i class="fas fa-phone"></i>
+                    <span>+54 11 1234-5678</span>
+                </div>
+                <div class="dato-contacto">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Santos Lugares, Buenos Aires, Argentina</span>
+                </div>
+            </div>
+            <div class="contacto-redes">
+                <a href="https://wa.me/1164623427" target="_blank" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://instagram.com/ochoux" target="_blank" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://tiktok.com/@lukii8a" target="_blank" aria-label="TikTok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>      </div>
+        </section>
+
+        <!-- CLIENTES/PARTNERS -->
+        <section class="clientes anim-on-scroll">
+            <h2>Confían en nosotros</h2>
+            <div class="clientes-logos">
+                <div class="cliente-logo"><i class="fab fa-apple"></i></div>
+                <div class="cliente-logo"><i class="fab fa-google"></i></div>
+                <div class="cliente-logo"><i class="fab fa-microsoft"></i></div>
+                <div class="cliente-logo"><i class="fab fa-amazon"></i></div>
+            </div>
+        </section>    
+        <!-- NEWSLETTER -->
+        <section class="newsletter anim-on-scroll" id="newsletter">
+            <div class="newsletter-container">
+                <div class="newsletter-bg-wrapper">
+                    <img src="./imagenes/newsletter.jpg" alt="Fondo de Newsletter" class="newsletter-bg" loading="lazy">
+                </div>
+                <div class="newsletter-content">
+                    <h2>¡Suscríbete a Nuestro Newsletter!</h2>
+                    <p>Mantente actualizado con las últimas tendencias en diseño web, ofertas exclusivas y consejos prácticos para mejorar tu presencia online y aumentar las conversiones</p>
+                    <form class="newsletter-form" id="newsletterForm" aria-label="Formulario de suscripción al boletín">
+                        <input type="email" placeholder="Tu correo electrónico" required aria-label="Tu correo electrónico" name="email">
+                        <button type="submit" aria-label="Suscribirse al newsletter">
+                            <i class="fas fa-paper-plane"></i> Suscribirme
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- FOOTER MEJORADO -->    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-logo">Ocho Design<span>Web</span></div>
+                <p class="footer-tagline">Diseño web profesional que impulsa tu negocio</p>
+                <div class="footer-contact">
+                    <div><i class="fas fa-map-marker-alt"></i> Santos Lugares, Buenos Aires</div>
+                    <div><i class="fas fa-envelope"></i> contacto@ochodesign.com</div>
+                    <div><i class="fas fa-phone"></i> +54 11 1234-5678</div>
+                </div>
+            </div>
+            
+            <div class="footer-links-container">
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#planes">Planes</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#testimonios">Testimonios</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                
+            </div>
+            
+            <div class="footer-social-section">
+                <h4>Seguinos</h4>
+                <div class="footer-social">
+                    <a href="https://instagram.com/ochoux" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://tiktok.com/@lukii8a" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://wa.me/1164623427" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+          
+            <div class="footer-copy">
+              <div class="footer-links">
+                    <a href="#">Política de Privacidad</a>
+                  </div>
+        </div>
+                &copy; 2025 OchoDesignWeb. Todos los derechos reservados.
+            </div>
+    </footer>    <!-- Modal de éxito -->
+    <div id="modal-exito" class="modal-exito oculto">
+        <div class="modal-exito-contenido">
+            <button class="modal-exito-cerrar" id="cerrarModalExito" aria-label="Cerrar">&times;</button>
+            <h3>¡Mensaje enviado!</h3>
+            <p>Tu mensaje se ha enviado con éxito.</p>
+            <button class="modal-exito-continuar" id="continuarModalExito">Continuar</button>
+        </div>
+    </div>
+
+    <!-- Botón de Scroll Up -->
+    <button class="btn-scroll-up" id="btnScrollUp" aria-label="Ir arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+   <!-- Botón de WhatsApp con mensaje emergente -->
+<a href="https://wa.me/1164623427?text=¡Hola! Me interesa conocer más sobre tus servicios de diseño web" class="btn-whatsapp" target="_blank" aria-label="Contactar por WhatsApp">
+    <img src="./imagenes/WhatsApp.svg.webp" alt="WhatsApp" class="btn-whatsapp-icon">
+</a>
+
+<!-- Globo de mensaje de WhatsApp -->
+<div class="wsp-msg-bubble" id="wspMsgBubble">
+    <button class="wsp-close" id="wspClose" aria-label="Cerrar mensaje">×</button>
+    <p>¿Necesitas ayuda con tu sitio web? <span class="wsp-highlight">Contáctame</span> 😊</p>
+    <div class="wsp-bubble-arrow"></div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
