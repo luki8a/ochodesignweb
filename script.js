@@ -401,3 +401,48 @@ if (newsletterForm) {
     }
   });
 }
+
+
+// ...existing code...
+
+// Política de Privacidad Modal
+document.addEventListener('DOMContentLoaded', function() {
+    const modalPrivacidad = document.getElementById('modal-privacidad');
+    const linkPrivacidad = document.getElementById('linkPrivacidad');
+    const cerrarModalPrivacidad = document.getElementById('cerrarModalPrivacidad');
+    
+    // Abrir modal al hacer clic en el enlace
+    if (linkPrivacidad) {
+        linkPrivacidad.addEventListener('click', function(e) {
+            e.preventDefault();
+            modalPrivacidad.classList.remove('oculto');
+            document.body.style.overflow = 'hidden'; // Evita el scroll del cuerpo
+        });
+    }
+    
+    // Cerrar modal al hacer clic en el botón cerrar
+    if (cerrarModalPrivacidad) {
+        cerrarModalPrivacidad.addEventListener('click', function() {
+            modalPrivacidad.classList.add('oculto');
+            document.body.style.overflow = ''; // Restaura el scroll del cuerpo
+        });
+    }
+    
+    // Cerrar modal al hacer clic fuera del contenido
+    if (modalPrivacidad) {
+        modalPrivacidad.addEventListener('click', function(e) {
+            if (e.target === modalPrivacidad) {
+                modalPrivacidad.classList.add('oculto');
+                document.body.style.overflow = ''; // Restaura el scroll del cuerpo
+            }
+        });
+    }
+    
+    // Cerrar modal con tecla ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !modalPrivacidad.classList.contains('oculto')) {
+            modalPrivacidad.classList.add('oculto');
+            document.body.style.overflow = ''; // Restaura el scroll del cuerpo
+        }
+    });
+});
