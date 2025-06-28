@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Optimización de rendimiento -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#6c63ff">
+  <meta name="description" content="Portafolio de Lucas Ochoa - Diseñador UX/UI especializado en experiencias digitales funcionales. Descubre mis proyectos de desarrollo web, metodología de trabajo y cómo puedo ayudarte a crear soluciones digitales efectivas.">
+  <meta property="og:title" content="Portafolio Personal | Lucas 8A" />
+  <meta property="og:description" content="Descubre el portafolio de proyectos de desarrollo web y diseño de Lucas 8A." />
+  <meta property="og:image" content="https://luki8a.github.io/portafoliolucas8a/img/logo-lucas-8a-portafolio-web.webp" />
+  <meta property="og:url" content="https://luki8a.github.io/portafoliolucas8a/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+
+  <title>Lucas Ochoa | Portafolio Web</title>
+  <!-- Favicon optimizado -->
+  <link rel="icon" type="image/webp" href="img/logo-lucas-8a-portafolio-web.webp" sizes="48x48 64x64 128x128 256x256">
+  <link rel="apple-touch-icon" href="img/logo-lucas-8a-portafolio-web.webp" sizes="180x180">
+  <!-- Preload de imagen crítica del hero -->
+  <link rel="preload" href="img/bg-hero-lucas-8a.webp" as="image" imagesrcset="img/bg-hero-lucas-8a.webp 1920w, img/bg-hero-lucas-8a.webp 1280w" imagesizes="100vw">
+  <link rel="stylesheet" href="style.css">
+  <!-- Preconnect para optimizar carga de fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Tipografía Google Fonts optimizada -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome no bloqueante -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+  <!-- Animaciones sutiles -->
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .button-hover:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      });
+      fadeElements.forEach(el => observer.observe(el));
+    });
+  </script>
+</head>
+<body>
+  <!-- Header fijo con logo/nombre y menú -->
+  <header class="header">
+    <div class="container header__container">
+      <div class="logo">
+        <img src="img/logo-lucas-8a-portafolio-web.webp" alt="Lucas Ochoa - Diseñador UX/UI" class="logo-image" width="50" height="50" loading="eager" fetchpriority="high">
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link active">Inicio</a></li>
+          <li><a href="#sobremi" class="nav__link">Sobre mí</a></li>
+          <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Botón menú mobile -->
+      <button class="nav__toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sección Hero/Inicio -->
+    <section id="inicio" class="hero">
+      <div class="hero__bg-gradient"></div>
+      <div class="hero__bg-overlay"></div>
+      
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            <span class="hero__title-line">¡Hola soy <span class="highlight">Lucas Ochoa</span></span>
+            <span class="hero__title-line">Diseñador Digital!</span>
+          </h1>
+          <p class="hero__description">
+           Especializado en UX/UI y diseño web, mi trabajo consiste en convertir visiones en experiencias digitales funcionales.
+          </p>
+          <div class="hero__cta">
+            <div class="hero__cta-buttons">
+              <a href="#proyectos" class="cta-button cta-button--outline">Proyectos</a>
+              <a href="#contacto" class="cta-button cta-button--secundario">Contacto</a>
+            </div>
+            
+          </div>
+          <div class="hero__availability">
+              <span class="pulse-dot"></span>
+              Disponible para nuevos proyectos <span class="availability-separator">|</span> <strong>Full time</strong>
+            </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="mouse"></div>
+        <div class="arrows"></div>
+      </div>
+    </section>
+
+<section id="sobremi" class="about">
+  <div class="container about__container">
+   
+    <!-- Contenido principal -->
+    <div class="about__info fade-in">
+
+     <!-- Foto de perfil destacada -->
+    <div class="about__img">
+      <div class="profile-pic-highlight">
+        <img src="img/Lucas-Perfil.webp" alt="Foto de perfil Lucas Ochoa" class="profile-pic--large" width="220" height="220" loading="lazy">
+      </div>
+    </div>
+
+      <h2>Sobre mí</h2>
+      <p class="about__intro">
+        Soy diseñador UX/UI apasionado por crear experiencias digitales intuitivas y memorables. Mi objetivo es resolver problemas reales de los usuarios a través de un diseño funcional, accesible y visualmente atractivo. Me mantengo a la vanguardia integrando herramientas de Inteligencia Artificial en mi flujo de trabajo para mejorar la eficiencia, rapidez y precisión en cada proyecto.
+      </p>
+      <!-- Habilidades organizadas -->
+      <div class="about__skills">
+        <h3>Herramientas de Diseño y Prototipado</h3>
+        <ul class="skills-list">
+          <li><img src="redes-sociales/figma.png" alt="Icono de herramienta de diseño" width="24" height="24" loading="lazy">Figma</li>
+          <li><img src="redes-sociales/visual-basico.png" alt="Icono de editor de código" width="24" height="24" loading="lazy">VSC</li>
+        </ul>
+        <h3>Habilidades de Desarrollo Web</h3>
+        <ul class="skills-list">
+          <li><img src="redes-sociales/html-5.png" alt="Icono de lenguaje de marcado" width="24" height="24" loading="lazy">HTML</li>
+          <li><img src="redes-sociales/css-3.png" alt="Icono de hojas de estilo" width="24" height="24" loading="lazy">CSS</li>
+          <li><img src="redes-sociales/js.png" alt="Icono de lenguaje de programación" width="24" height="24" loading="lazy">JavaScript</li>
+        </ul>
+        <h3>Conceptos y Metodologías UX/UI</h3>
+        <ul class="skills-list">
+          <li><img src="redes-sociales/interfaz-ux.png" alt="Icono de experiencia de usuario" width="24" height="24" loading="lazy">Diseño UX</li>
+          <li><img src="redes-sociales/ui.png" alt="Icono de interfaz de usuario" width="24" height="24" loading="lazy">Diseño UI</li>
+          <li><img src="redes-sociales/estructura-de-la-jerarquia.png" alt="Icono de organización de información" width="24" height="24" loading="lazy">Arquitectura de la Información</li>
+          <li><img src="redes-sociales/test-de-velocidad.png" alt="Icono de pruebas de usabilidad" width="24" height="24" loading="lazy">Usability Testing</li>
+          <li><img src="redes-sociales/accesibilidad.png" alt="Icono de diseño inclusivo" width="24" height="24" loading="lazy">Accesibilidad</li>
+        </ul>
+        <h3>Herramientas Avanzadas y AI</h3>
+        <ul class="skills-list">
+          <li><img src="redes-sociales/github (1).png" alt="Icono de asistente de programación" width="24" height="24" loading="lazy">GitHub Copilot</li>
+          <li><img src="redes-sociales/logo-chatgpt.png" alt="Icono de inteligencia artificial" style="width: 20px; height: 20px;" width="20" height="20" loading="lazy">ChatGPT</li>
+          <li><img src="redes-sociales/google-gemini-icon.webp" alt="Icono de IA generativa" style="width: 20px; height: 20px;" width="20" height="20" loading="lazy">Gemini AI</li>
+        </ul>
+      </div>
+      <!-- Filosofía de diseño -->
+      <div class="about__philosophy">
+        <h3>Mi Enfoque</h3>
+        <p>
+          Creo en el diseño centrado en el usuario, donde cada decisión se basa en empatía, investigación y pruebas constantes. Combino metodologías tradicionales con herramientas de IA para acelerar el proceso creativo y mejorar la precisión en cada etapa. Mi meta es transformar necesidades en soluciones simples, efectivas y de alta calidad, aprovechando lo mejor de ambos mundos: la creatividad humana y la eficiencia de la IA.
+        </p>
+      </div>
+      <!-- Intereses personales -->
+      <div class="about__interests">
+        <h3>Hobbies</h3>
+        <ul class="interests-list">
+          <li class="interest-item">
+            <img src="redes-sociales/jugador-de-futbol.png" alt="Icono de deporte" class="interest-icon" width="32" height="32" loading="lazy">
+            <span>El Futból</span>
+          </li>
+          <li class="interest-item">
+            <img src="redes-sociales/escucha.png" alt="Icono de entretenimiento" class="interest-icon" width="32" height="32" loading="lazy">
+            <span>La Musica</span>
+          </li>
+          <li class="interest-item">
+            <img src="redes-sociales/cuidado-de-mascotas.png" alt="Icono de cuidado animal" class="interest-icon" width="32" height="32" loading="lazy">
+            <span>Mis Mascotas</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+      <!-- Sección Metodología -->
+    <section id="metodologia" class="timeline">
+  <div class="timeline__header">
+    <h2>Mi Metodología de Trabajo</h2>
+    <p class="timeline__desc">Un proceso iterativo y creativo, desde la inspiración hasta la mejora continua.</p>
+  </div>
+  <div class="timeline__container">
+    <div class="timeline__line"></div>
+    <div class="timeline__item fade-in">
+      <div class="timeline__dot"></div>
+      <div class="timeline__content">
+        <h3>Inspiración</h3>
+        <p>Mi proceso creativo comienza siempre con la inspiración. Antes de diseñar, me tomo el tiempo para explorar: investigo tendencias, analizo otras webs y busco referencias visuales en plataformas como Pinterest o Behance. Esta etapa me ayuda a nutrir mi mirada y abrir el panorama a nuevas ideas.</p>
+      </div>
+    </div>
+    <div class="timeline__item fade-in">
+      <div class="timeline__dot"></div>
+      <div class="timeline__content">
+        <h3>Organización y Arquitectura</h3>
+        <p>Cuando las ideas ya toman forma, organizo el proyecto dividiéndolo en partes pequeñas y concretas. Creo una arquitectura de la información clara, identificando cada desafío como un punto a resolver. Así, trabajo paso a paso, con foco en cada detalle, hasta construir un resultado coherente, funcional y bien pensado.</p>
+      </div>
+    </div>
+    <div class="timeline__item fade-in">
+      <div class="timeline__dot"></div>
+      <div class="timeline__content">
+        <h3>Acción e Iteración</h3>
+        <p>Luego paso directamente a la acción, combinando diseño e iteración constante. Me siento muy cómodo con el enfoque ágil: probar, equivocarse, ajustar y mejorar. No espero a tener todo resuelto para empezar; creo mientras avanzo, porque sé que las mejores soluciones surgen en el camino.</p>
+      </div>
+    </div>
+    <div class="timeline__item fade-in">
+      <div class="timeline__dot"></div>
+      <div class="timeline__content">
+        <h3>Etapa Final</h3>
+        <p>Y cuando el diseño está terminado, el proceso no se detiene. Vuelvo a mirar, a testear, a iterar. Porque cada proyecto es una oportunidad para seguir aprendiendo, perfeccionar lo creado y llevar las ideas un poco más lejos.</p>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="projects">
+      <div class="container">
+        <h2>Proyectos</h2>
+        <div class="projects__grid">
+          <!-- Tarjeta de proyecto ejemplo -->
+          <article class="project-card fade-in">
+            <img src="img/web-futsorteo.webp" alt="Captura de pantalla del proyecto Futsorteo" class="project-card__img" width="400" height="225" loading="lazy">
+            <div class="project-card__body">
+              <h3>Futsorteo</h3>
+              <p>Una herramienta intuitiva para organizar tus partidos de fútbol 5. Futsorteo genera equipos aleatorios y equilibrados al instante, permitiéndote designar porteros para una selección de equipos sin complicaciones.</p>
+              <div class="project-card__tech">
+                <span>Figma</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+                
+              </div>
+              <div class="project-card__links">
+                <a href="https://luki8a.github.io/Futsorteo/" target="_blank" class="btn btn--primary button-hover">¡Explora el proyecto! <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card fade-in">
+            <img src="img/web-equiposantillan.webp" alt="Captura de pantalla del proyecto Equipo Santillán" class="project-card__img" width="400" height="225" loading="lazy">
+            <div class="project-card__body">
+              <h3>Equipo Santillán</h3>
+              <p>Un proyecto web diseñado para Equipo Santillán, destacando las clases de boxeo para todos los niveles. Capturamos la esencia del entrenamiento profesional y la personalización, invitando a nuevos alumnos a superar sus límites y alcanzar sus metas bajo la guía de un experto certificado.</p>
+              <div class="project-card__tech">
+                <span>Figma</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+                
+              </div>
+              <div class="project-card__links">
+                <a href="https://luki8a.github.io/equiposantillan/" target="_blank" class="btn btn--primary button-hover">¡Explora el proyecto! <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card fade-in">
+            <img src="img/web-porfolio.webp" alt="Captura de pantalla del proyecto Ocho Design Web" class="project-card__img" width="400" height="225" loading="lazy">
+            <div class="project-card__body">
+              <h3>Ocho Design Web</h3>
+              <p>Un sitio web showcase de Ocho Design Web, destacando nuestra especialización en diseño y desarrollo web profesional. Presenta cómo creamos soluciones digitales atractivas y funcionales que impulsan la presencia online y el éxito de negocios, optimizadas para captar clientes.</p>
+              <div class="project-card__tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+              </div>
+              <div class="project-card__links">
+                <a href="https://luki8a.github.io/ochodesignweb/" target="_blank" class="btn btn--primary button-hover">¡Explora el proyecto! <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Repite más tarjetas según tus proyectos -->
+        </div>
+      </div>
+    </section>
+
+
+
+
+<!-- Formulario de contacto -->
+<section id="contacto" class="contacto-burbujas-section">
+  <h2>Contacto</h2>
+  <div class="burbujas-sociales burbujas-horizontal" style="justify-content: center;">
+    <!-- Enlace de correo con asunto predefinido -->
+<a href="mailto:ocho.digital2024@gmail.com?subject=Consulta%20desde%20tu%20portafolio%20web" class="burbuja-social gmail" target="_blank" aria-label="Gmail">
+  <i class="fa-solid fa-envelope"></i>
+</a>
+
+<!-- Enlace de WhatsApp con mensaje automático -->
+<a href="https://wa.me/1164623427?text=Hola%20Lucas,%20te%20hablo%20desde%20tu%20portafolio%20web" class="burbuja-social whatsapp" target="_blank" aria-label="WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+    <a href="https://instagram.com/luki8a" class="burbuja-social instagram" target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://linkedin.com/in/ochoux" class="burbuja-social linkedin" target="_blank" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+  </div>
+  <p class="contacto-resaltado">Elegí el medio que prefieras y contactame con un solo click.</p>
+
+  <!-- Formulario de contacto -->
+  <div class="contact-form-container">
+    <h3>O dejame tu mensaje</h3>
+    <p class="form-description">Me pondré en contacto con vos lo antes posible.</p>
+    
+    <form id="contactForm" class="contact-form" action="https://formspree.io/f/xgvypjvn" method="POST">
+      <div class="form-group">
+        <div class="form-field">
+          <input type="text" id="name" name="name" required class="form-input" placeholder=" ">
+          <label for="name" class="form-label">Nombre</label>
+        </div>
+        
+        <div class="form-field">
+          <input type="email" id="email" name="email" required class="form-input" placeholder=" ">
+          <label for="email" class="form-label">Email</label>
+        </div>
+        
+        <div class="form-field">
+          <input type="tel" id="phone" name="phone" class="form-input" placeholder=" ">
+          <label for="phone" class="form-label">Teléfono (opcional)</label>
+        </div>
+        
+        <div class="form-field">
+          <textarea id="message" name="message" required class="form-input form-textarea" placeholder=" "></textarea>
+          <label for="message" class="form-label">Mensaje</label>
+        </div>
+      </div>
+      
+      <button type="submit" class="submit-btn button-hover">
+        <span class="btn-text">Enviar mensaje</span>
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </form>
+  </div>
+</section>
+
+<div class="bubble-real-hd"></div>
+
+  <!-- Footer minimalista -->
+  <footer>
+  <nav class="footer-nav">
+    <a href="#inicio">Inicio</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/luki8a/" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://linkedin.com/in/ochoux" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/luki8a" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://behance.net/ochoux" target="_blank" aria-label="Behance">
+      <i class="fab fa-behance"></i>
+    </a>
+    <a href="https://wa.me/1164623427" target="_blank" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+  <div class="footer-legal">
+    <a href="#" class="footer-link-privacidad" id="open-privacidad">Política de Privacidad</a>
+  </div>
+  <p class="footer-copy">&copy; 2025 Todos los derechos reservados.</p>
+  <p class="footer-copy">Página diseñada por  <span class="ochoo"> El ochoo</span></p>
+</footer>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/541164623427?text=Hola%20Lucas,%20te%20hablo%20desde%20tu%20portafolio%20web" class="wsp-btn" aria-label="WhatsApp">
+  <img src="img/logo-whatsapp-web.webp" alt="WhatsApp" width="38" height="38" loading="lazy" />
+</a>
+
+<!-- Mensaje flotante de WhatsApp -->
+<div id="wsp-msg" class="wsp-msg">
+  <span>¡Hola! Estoy aquí para ayudarte 😊</span>
+  <button onclick="closeWspMsg()">✕</button>
+</div>
+
+<!-- Botón scroll-to-top -->
+<a href="#inicio" class="scroll-to-top" aria-label="Volver al inicio">
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+</a>
+
+  <!-- Modal de Política de Privacidad -->
+  <div id="privacidad-modal" class="privacidad-modal" aria-modal="true" role="dialog" tabindex="-1" style="display:none;">
+    <div class="privacidad-modal__content">
+      <button class="privacidad-modal__close" id="close-privacidad" aria-label="Cerrar">&times;</button>
+      <h1 class="privacidad-modal__title">Política de Privacidad</h1>
+      <p>En este sitio web, la privacidad de los visitantes es de suma importancia. A continuación se detalla qué información se recopila y cómo se utiliza:</p>
+      <h2>Recopilación de datos</h2>
+      <ul>
+        <li>Solo se recopilan los datos enviados voluntariamente a través del formulario de contacto (nombre, email, teléfono y mensaje).</li>
+        <li>No se utilizan cookies ni se realiza seguimiento de navegación.</li>
+      </ul>
+      <h2>Uso de la información</h2>
+      <ul>
+        <li>La información proporcionada se utiliza únicamente para responder consultas o solicitudes de contacto.</li>
+        <li>No se comparte ni vende información personal a terceros.</li>
+      </ul>
+      <h2>Enlaces externos</h2>
+      <ul>
+        <li>Este sitio contiene enlaces a redes sociales y proyectos externos. No nos responsabilizamos por las políticas de privacidad de esos sitios.</li>
+      </ul>
+      <h2>Responsable</h2>
+      <ul>
+        <li>Responsable: Lucas Ochoa</li>
+        <li>Email de contacto: ocho.digital2024@gmail.com</li>
+      </ul>
+      <h2>Actualizaciones</h2>
+      <ul>
+        <li>Esta política puede actualizarse ocasionalmente. Última actualización: 26/06/2025.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+  <script defer>
+    // Modal de privacidad
+    document.addEventListener('DOMContentLoaded', function() {
+      const openPrivacidad = document.getElementById('open-privacidad');
+      const closePrivacidad = document.getElementById('close-privacidad');
+      const privacidadModal = document.getElementById('privacidad-modal');
+      if (openPrivacidad && closePrivacidad && privacidadModal) {
+        openPrivacidad.addEventListener('click', function(e) {
+          e.preventDefault();
+          privacidadModal.style.display = 'flex';
+          privacidadModal.focus();
+          document.body.style.overflow = 'hidden';
+        });
+        closePrivacidad.addEventListener('click', function() {
+          privacidadModal.style.display = 'none';
+          document.body.style.overflow = '';
+        });
+        // Cerrar con fondo
+        privacidadModal.addEventListener('click', function(e) {
+          if (e.target === privacidadModal) {
+            privacidadModal.style.display = 'none';
+            document.body.style.overflow = '';
+          }
+        });
+        // Cerrar con ESC
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && privacidadModal.style.display === 'flex') {
+            privacidadModal.style.display = 'none';
+            document.body.style.overflow = '';
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

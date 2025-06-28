@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://luki8a.github.io/portafoliolucas8a/sitemap.xml
